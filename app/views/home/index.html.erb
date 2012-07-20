@@ -18,7 +18,7 @@
         	  <% @galleries.each do |gallery| %>
           <li>
             <div class="imgholder"><%= image_tag gallery.foto.url(:thumb)  %></div>
-            <p class="name">Action Photography</p>
+            <p class="name"><%= gallery.nome %></p>
             <p class="readmore"><a href="/galleries">Visite a galeria &raquo;</a></p>
           </li>
              <% end %>
