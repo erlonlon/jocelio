@@ -1,0 +1,53 @@
+<!-- ####################################################################################################### -->
+
+<div id="container" class="clear">
+	<!-- ####################################################################################################### -->
+	<div id="content">
+
+		<h2>Contatos</h2>
+		<div id="respond">
+
+			<h1 id="notice" style="color: #00CD66" >
+				<%= notice %>
+			</h1>
+
+			<p>
+				<b>Nome:</b>
+				<%= @contact.nome %>
+			</p>
+
+			<p>
+				<b>Email:</b>
+				<%= @contact.email %>
+			</p>
+
+			<p>
+				<b>Assunto:</b>
+				<%= @contact.assunto %>
+			</p>
+
+			<p>
+				<b>Data contato:</b>
+				<%= @contact.data_contato %>
+			</p>
+
+			
+			<%= link_to 'Voltar', contacts_path %>
+
+		</div>
+	</div>
+	<div id="column">
+		
+		
+
+		<!-- partial do submenu -->
+   
+      <%= render :partial => "layouts/submenu" %>
+     	<!-- fechar partial do submenu -->
+
+	</div>
+	<!-- ####################################################################################################### -->
+</div>
+
+<!-- ####################################################################################################### -->
+

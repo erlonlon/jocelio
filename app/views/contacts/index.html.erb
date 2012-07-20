@@ -1,0 +1,69 @@
+<!-- ####################################################################################################### -->
+
+  <div id="container" class="clear">
+    <!-- ####################################################################################################### -->
+    <div id="content">    
+    
+      <h2>Contatos</h2>
+      <div id="respond">
+  <%= form_for(@contact) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :assunto %><br />
+    <%= f.text_field :assunto %>
+  </div>
+  <div class="field">
+    <%= f.label :data_contato %><br />
+    <%= f.datetime_select :data_contato %>
+  </div>
+  <div class="field">
+    <%= f.label :conteudo %><br />
+    <%= f.text_area :conteudo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+       
+       
+       
+       
+       
+       
+      </div>
+    </div>
+    <div id="column">
+    	
+    	<!-- partial do submenu -->
+   
+      <%= render :partial => "layouts/submenu" %>
+     	<!-- fechar partial do submenu -->
+    </div>
+    <!-- ####################################################################################################### -->
+  </div>
+
+<!-- ####################################################################################################### -->
+
+
+
+

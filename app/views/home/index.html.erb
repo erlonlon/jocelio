@@ -1,0 +1,33 @@
+   
+   
+  <div id="container" class="clear">
+    <!-- ####################################################################################################### -->
+    <div id="hpage_info" class="clear">
+      <div class="fl_left">
+        <h2 class="title">Campanha Vereador 2012</h2>
+        <h4>12 motivos pra você votar em min</h4>
+      
+        	<p>1.Melhoria no resgate de primeiros socorros do municipio </p>
+        	<p>2.É totalmente inserido no movimento social da cidade onde vive</p>
+
+        
+          </div>
+      <div class="fl_right clear">
+        <h2 class="title">Visita a Comunidade</h2>
+        <ul>
+        	  <% @galleries.each do |gallery| %>
+          <li>
+            <div class="imgholder"><%= image_tag gallery.foto.url(:thumb)  %></div>
+            <p class="name">Action Photography</p>
+            <p class="readmore"><a href="#">View This Category &raquo;</a></p>
+          </li>
+             <% end %>
+         
+          
+        
+        </ul>
+      </div>
+    </div>
+    <!-- ####################################################################################################### -->
+  </div>
+

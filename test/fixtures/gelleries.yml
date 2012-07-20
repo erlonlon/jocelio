@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  data_cadastro: 2012-07-17 21:42:11
+  foto_file_name,: MyString
+  : MyString
+  foto_content_type,: MyString
+  : MyString
+  foto_file_size,: MyString
+  : 1
+  foto_updated_at,: MyString
+  : 2012-07-17 21:42:11
+  migrate=false: MyString
+
+two:
+  nome: MyString
+  data_cadastro: 2012-07-17 21:42:11
+  foto_file_name,: MyString
+  : MyString
+  foto_content_type,: MyString
+  : MyString
+  foto_file_size,: MyString
+  : 1
+  foto_updated_at,: MyString
+  : 2012-07-17 21:42:11
+  migrate=false: MyString
