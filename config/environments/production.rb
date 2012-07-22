@@ -46,7 +46,7 @@ Jocelio::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-   config.assets.precompile += %w(layout.css prettyPhoto.css jquery-1.4.1.min.js jquery.prettyPhoto.js )
+   config.assets.precompile += %w(layout.css jquery-1.4.1.min.js jquery-s3slider.js jquery-s3slider.setup.js)
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
