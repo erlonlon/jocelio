@@ -1,88 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Jocelio</title>
-  <%= stylesheet_link_tag "layout" %>
-    <%= stylesheet_link_tag "prettyPhoto" %>
-    <%= javascript_include_tag "jquery-1.4.1.min" %>
-  <%= javascript_include_tag "jquery.prettyPhoto" %>
- 
-  <%= csrf_meta_tags %>
-  
-  <script type="text/javascript">
-$(document).ready(function () {
-    $(".thumbs a").click(function () {
-        var imgpath = $(this).attr("href");
-        var imgalt = $(this).attr("alt");
-        $("#placeholder").attr({
-            src: imgpath,
-            alt: imgalt
-        });
-        return false;
-    });
-});
-</script>
+	<head>
+		<title>Jocelio</title>
+		<%= stylesheet_link_tag "layout" %>
+		<%= stylesheet_link_tag "prettyPhoto" %>
+		<%= javascript_include_tag "jquery-1.4.1.min" %>
+		<%= javascript_include_tag "jquery.prettyPhoto" %>
 
-<script type="text/javascript">
-$(document).ready(function () { $("a[rel^='prettyPhoto']").prettyPhoto({theme:'light_rounded'}); });
-</script>
+		<%= csrf_meta_tags %>
 
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".thumbs a").click(function() {
+					var imgpath = $(this).attr("href");
+					var imgalt = $(this).attr("alt");
+					$("#placeholder").attr({
+						src : imgpath,
+						alt : imgalt
+					});
+					return false;
+				});
+			});
+		</script>
 
-</head>
-<body id="top">
-<div class="wrapper col1">
-  <div id="header" class="clear">
-  	
-  	<!-- menu do sistema chamado pelo partial-->
-  
- <%= render :partial => "layouts/menu" %> 
+		
 
-  
-  </div>
-</div>
-<!-- ####################################################################################################### -->
-<div class="wrapper col2">
-  <div id="homepage" class="clear">
-    <p><img id="placeholder" src="../images/demo/banner1.jpg" alt="" /></p>
-    <ul class="thumbs">
-      <li><a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a></li>
-     <li><a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a></li>
-     <li><a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a></li>
-     <li><a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a></li>
-      <li><a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a></li>
-      
-      <li class="last"><a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a></li>
-    </ul>
-  </div>
-</div>
-<!-- ####################################################################################################### -->
-<div class="wrapper col3">
-	<!--conteudo dimanico-->
-	
-    <%= yield %>
-  
-  
-</div>
+	</head>
+	<body id="top">
+		<div class="wrapper col1">
+			<div id="header" class="clear">
 
+				<!-- menu do sistema chamado pelo partial-->
 
+				<%= render :partial => "layouts/menu" %>
 
-<!-- ####################################################################################################### -->
-<div class="wrapper">
-	
-	<!-- partial footer-->
- 
- <%= render :partial => "layouts/footer" %>
-  	<!-- fecha partial footer-->
-  
-</div>
-<!-- ####################################################################################################### -->
-<div class="wrapper">
-  <div id="copyright" class="clear">
-    <p class="fl_left">Copyright &copy; 2012 - All Rights Reserved - <a href="/home">Jocélio Gondim</a></p>
-    <p class="fl_right">Template by <a href="http://www.os-templates.com/" target="blank" title="Free Website Templates">OS Templates</a></p>
-  </div>
-</div>
-</body>
+			</div>
+		</div>
+		<!-- ####################################################################################################### -->
+		<div class="wrapper col2">
+			<div id="homepage" class="clear">
+				<p><img id="placeholder" src="../images/demo/banner1.jpg" alt="" />
+				</p>
+				<ul class="thumbs">
+					<li>
+						<a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a>
+					</li>
+					<li>
+						<a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a>
+					</li>
+					<li>
+						<a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a>
+					</li>
+					<li>
+						<a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a>
+					</li>
+					<li>
+						<a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a>
+					</li>
 
+					<li class="last">
+						<a href="../images/demo/banner1.jpg"><img src="../images/demo/banner1.jpg" alt="" /></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- ####################################################################################################### -->
+		<div class="wrapper col3">
+			<!--conteudo dimanico-->
+
+			<%= yield %>
+
+		</div>
+
+		<!-- ####################################################################################################### -->
+		<div class="wrapper">
+
+			<!-- partial footer-->
+
+			<%= render :partial => "layouts/footer" %>
+			<!-- fecha partial footer-->
+
+		</div>
+		<!-- ####################################################################################################### -->
+		<div class="wrapper">
+			<div id="copyright" class="clear">
+				<p class="fl_left">
+					Copyright &copy; 2012 - All Rights Reserved - <a href="/home">Jocélio Gondim</a>
+				</p>
+				<p class="fl_right">
+					Template by <a href="http://www.os-templates.com/" target="blank" title="Free Website Templates">OS Templates</a>
+				</p>
+			</div>
+		</div>
+	</body>
 
 </html>
