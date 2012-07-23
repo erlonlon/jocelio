@@ -13,9 +13,9 @@ nav ul{margin:0; padding:0; list-style:none;}
 #topnav{padding:20px 0;}
 #topnav li{float:left; margin-right:30px; text-transform:uppercase;}
 #topnav li li{margin-left:0;}
-#topnav li a:link, #topnav li a:visited, #topnav li a:hover{display:block; margin:0; padding:0; color:#FFFFFF;  background-color:#9ACD32;}
+#topnav li a:link, #topnav li a:visited, #topnav li a:hover{display:block; margin:0; padding:0; color:#FFFFFF;  background-color:#1874CD;}
 #topnav ul ul li a:link, #topnav ul ul li a:visited{border:none;}
-#topnav li a:hover, #topnav li.active a{color:#27408B; background-color:#9ACD32;}
+#topnav li a:hover, #topnav li.active a{color:#9ACD32; background-color:#1874CD;}
 #topnav li li a:link, #topnav li li a:visited{width:150px; float:none; margin:0; padding:7px 10px; color:#666666; background-color:#F9F9F9; border:none;}
 #topnav li li a:hover{color:#1874CD; background-color:#F9F9F9;}
 #topnav ul ul{z-index:9999; position:absolute; left:-999em; height:auto; width:170px; padding:5px 0 0 0; border-bottom:1px solid #666666;}
