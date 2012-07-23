@@ -17,7 +17,7 @@
 		<header id="header" class="clear">
 			<hgroup>
 				<a href="#"><img src="images/demo/banner_jocelio2.jpg" alt="banner" width="155" height="55" /></a>
-				
+
 			</hgroup>
 			<form action="#" method="post">
 				<fieldset>
@@ -31,48 +31,15 @@
 		</header>
 	</div>
 	<div class="wrapper row2">
-		<nav id="topnav" class="clear">
-			<ul>
-				<li class="active">
-					<a href="/home">Home</a>
-				</li>
-				<li>
-					<a href="style-demo.html">Style Demo</a>
-				</li>
-				<li>
-					<a href="full-width.html">Full Width</a>
-				</li>
-				<li>
-					<a href="gallery.html">Gallery</a>
-				</li>
-				<li>
-					<a href="portfolio.html">Portfolio</a>
-				</li>
-				<li>
-					<a href="#">DropDown</a>
-					<ul>
-						<li>
-							<a href="#">Link 1</a>
-						</li>
-						<li>
-							<a href="#">Link 2</a>
-						</li>
-						<li>
-							<a href="#">Link 3</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">A Long Link Text Here</a>
-				</li>
-				<li class="last">
-					<a href="#">Link Text</a>
-				</li>
-			</ul>
-		</nav>
+		<!-- chama render partial para navegação do site topo-->
+
+		<%= render :partial => "layouts/menu"%>
+
+		<!-- fecha navegação do site topo-->
 	</div>
 	<!-- content -->
-	<div class="wrapper row3">
+	<div class="wrapper row3">		
+		
 		<div id="container" class="clear">
 			<!-- Slider -->
 			<section id="featured_slide_">
@@ -83,7 +50,7 @@
 							<a href="#"><img src="images/demo/banner1.jpg" alt="banner" /></a>
 							<figcaption>
 								<h2>Trabalhar para o Aracati crescer</h2>
-								
+
 							</figcaption>
 						</figure>
 					</li>
@@ -92,7 +59,7 @@
 							<a href="#"><img src="images/demo/banner2.jpg" alt="" /></a>
 							<figcaption>
 								<h2>Junto com essa dupla o Aracati vai crescer</h2>
-								
+
 							</figcaption>
 						</figure>
 					</li>
@@ -101,7 +68,7 @@
 							<a href="#"><img src="images/demo/banner1.jpg" alt="banner" /></a>
 							<figcaption>
 								<h2>Trabalhar para o Aracati crescer</h2>
-								
+
 							</figcaption>
 						</figure>
 					</li>
@@ -111,127 +78,14 @@
 				</ul>
 				<!-- ########################################################################################## -->
 			</section>
+			
 			<!-- main content -->
 			<div id="homepage">
-				<!-- Introduction -->
-				<section id="intro" class="clear">
-					<article class="one_fifth">
-						<a href="#"><img src="images/demo/166x130.gif" width="166" height="130" alt=""></a>
-						<h2>Indonectetus facilis</h2>
-						<p>
-							Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.
-						</p>
-						<footer class="more">
-							<a href="#">Read More &raquo;</a>
-						</footer>
-					</article>
-					<article class="one_fifth">
-						<a href="#"><img src="images/demo/166x130.gif" width="166" height="130" alt=""></a>
-						<h2>Indonectetus facilis</h2>
-						<p>
-							Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.
-						</p>
-						<footer class="more">
-							<a href="#">Read More &raquo;</a>
-						</footer>
-					</article>
-					<article class="one_fifth">
-						<a href="#"><img src="images/demo/166x130.gif" width="166" height="130" alt=""></a>
-						<h2>Indonectetus facilis</h2>
-						<p>
-							Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.
-						</p>
-						<footer class="more">
-							<a href="#">Read More &raquo;</a>
-						</footer>
-					</article>
-					<article class="one_fifth">
-						<a href="#"><img src="images/demo/166x130.gif" width="166" height="130" alt=""></a>
-						<h2>Indonectetus facilis</h2>
-						<p>
-							Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.
-						</p>
-						<footer class="more">
-							<a href="#">Read More &raquo;</a>
-						</footer>
-					</article>
-					<article class="one_fifth lastbox">
-						<a href="#"><img src="images/demo/166x130.gif" width="166" height="130" alt=""></a>
-						<h2>Indonectetus facilis</h2>
-						<p>
-							Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.
-						</p>
-						<footer class="more">
-							<a href="#">Read More &raquo;</a>
-						</footer>
-					</article>
-				</section>
-				<!-- / Introduction -->
-				<!-- ########################################################################################## -->
-				<!-- Services -->
-				<section id="services" class="last clear">
-					<article class="one_third">
-						<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
-							<figcaption>
-								<h2>Indonectetus facilis</h2>
-								<p>
-									Proin quam etiam ultrices suspen disse in justo eu magna.
-								</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="one_third">
-						<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
-							<figcaption>
-								<h2>Indonectetus facilis</h2>
-								<p>
-									Proin quam etiam ultrices suspen disse in justo eu magna.
-								</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="one_third lastbox">
-						<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
-							<figcaption>
-								<h2>Indonectetus facilis</h2>
-								<p>
-									Proin quam etiam ultrices suspen disse in justo eu magna.
-								</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="one_third">
-						<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
-							<figcaption>
-								<h2>Indonectetus facilis</h2>
-								<p>
-									Proin quam etiam ultrices suspen disse in justo eu magna.
-								</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="one_third">
-						<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
-							<figcaption>
-								<h2>Indonectetus facilis</h2>
-								<p>
-									Proin quam etiam ultrices suspen disse in justo eu magna.
-								</p>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="one_third lastbox">
-						<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
-							<figcaption>
-								<h2>Indonectetus facilis</h2>
-								<p>
-									Proin quam etiam ultrices suspen disse in justo eu magna.
-								</p>
-							</figcaption>
-						</figure>
-					</article>
-				</section>
-				<!-- / Services -->
+				<!-- conteudo dimanico -->
+					<%= yield %>
+			
+					<!-- conteudo dimanico -->
+				
 			</div>
 			<!-- / content body -->
 		</div>

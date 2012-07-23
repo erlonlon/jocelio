@@ -1,0 +1,89 @@
+<!-- Introduction -->
+<section id="intro" class="clear">
+	 <% @galleries.each do |gallery| %>
+	<article class="one_fifth">
+		
+		<a href="/galleries" title="veja galeria completa">
+			<%= image_tag gallery.foto.url(:thumb)  %>
+			
+			</a>
+		<h2><%= gallery.nome %></h2>
+		
+		<footer class="more">
+			<a href="galleries" title="página de fotos">Visite a galeria &raquo;</a>
+		</footer>
+		
+	
+	</article>
+		<% end %>
+	
+	
+	
+	
+</section>
+<!-- / Introduction -->
+<!-- ########################################################################################## -->
+<!-- Services -->
+<section id="services" class="last clear">
+	<article class="one_third">
+		<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
+			<figcaption>
+				<h2>Indonectetus facilis</h2>
+				<p>
+					Proin quam etiam ultrices suspen disse in justo eu magna.
+				</p>
+			</figcaption>
+		</figure>
+	</article>
+	<article class="one_third">
+		<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
+			<figcaption>
+				<h2>Indonectetus facilis</h2>
+				<p>
+					Proin quam etiam ultrices suspen disse in justo eu magna.
+				</p>
+			</figcaption>
+		</figure>
+	</article>
+	<article class="one_third lastbox">
+		<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
+			<figcaption>
+				<h2>Indonectetus facilis</h2>
+				<p>
+					Proin quam etiam ultrices suspen disse in justo eu magna.
+				</p>
+			</figcaption>
+		</figure>
+	</article>
+	<article class="one_third">
+		<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
+			<figcaption>
+				<h2>Indonectetus facilis</h2>
+				<p>
+					Proin quam etiam ultrices suspen disse in justo eu magna.
+				</p>
+			</figcaption>
+		</figure>
+	</article>
+	<article class="one_third">
+		<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
+			<figcaption>
+				<h2>Indonectetus facilis</h2>
+				<p>
+					Proin quam etiam ultrices suspen disse in justo eu magna.
+				</p>
+			</figcaption>
+		</figure>
+	</article>
+	<article class="one_third lastbox">
+		<figure class="clear"><img src="images/demo/48x48.gif" width="48" height="48" alt="">
+			<figcaption>
+				<h2>Indonectetus facilis</h2>
+				<p>
+					Proin quam etiam ultrices suspen disse in justo eu magna.
+				</p>
+			</figcaption>
+		</figure>
+	</article>
+</section>
+<!-- / Services -->

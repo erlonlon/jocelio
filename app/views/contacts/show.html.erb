@@ -1,11 +1,20 @@
-<!-- ####################################################################################################### -->
 
-<div id="container" class="clear">
-	<!-- ####################################################################################################### -->
-	<div id="content">
+		
+		
+		
 
-		<h2>Contatos</h2>
-		<div id="respond">
+		
+
+	
+	<!-- content body -->
+<div id="content">
+	<section id="comments">
+
+		<h2>Muito obrigado pelo contato</h2>
+		
+		
+		
+		
 
 			<h1 id="notice" style="color: #00CD66" >
 				<%= notice %>
@@ -34,20 +43,44 @@
 			
 			<%= link_to 'Voltar', contacts_path %>
 
-		</div>
-	</div>
-	<div id="column">
-		
-		
 
-		<!-- partial do submenu -->
+	</section>
+
+</div>
+<!-- right column -->
+<aside id="right_column">
+	<h2>Site Navigation</h2>
+	<nav>
+	<!-- partial do submenu -->
    
       <%= render :partial => "layouts/submenu" %>
-     	<!-- fechar partial do submenu -->
+     	<!-- fechar partial do submenu -->	
+		
+		
+	</nav>
+	<!-- /nav -->
+	<section>
+		<h2>Get In Contact</h2>
+		<address>
+			Full Name
+			<br>
+			Address Line 1
+			<br>
+			Address Line 2
+			<br>
+			Town/City
+			<br>
+			Postcode/Zip
+			<br>
+			<br>
+			Tel: xxxx xxxx xxxxxx
+			<br>
+			Email: <a href="#">contact@domain.com</a>
+		</address>
+	</section>
+	<!-- /section -->
 
-	</div>
-	<!-- ####################################################################################################### -->
-</div>
+</aside>
+<!-- / content body -->
 
-<!-- ####################################################################################################### -->
 

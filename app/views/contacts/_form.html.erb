@@ -1,99 +1,90 @@
+<!-- content body -->
+<div id="content">
+	<section id="comments">
 
-<!-- ####################################################################################################### -->
+		<h2>Contatos</h2>
 
-  <div id="container" class="clear">
-    <!-- ####################################################################################################### -->
-    <div id="content">    
-    
-      <h2>Contatos</h2>
-      <div id="respond">
-      	
-<%= form_for(@contact) do |f| %>
-  <% if @contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+		<%= form_for(@contact) do |f| %>
+		<% if @contact.errors.any? %>
+		<div id="error_explanation">
+			<h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
 
-      <ul>
-      <% @contact.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+			<ul>
+				<% @contact.errors.full_messages.each do |msg| %>
+				<li>
+					<%= msg %>
+				</li>
+				<% end %>
+			</ul>
+		</div>
+		<% end %>
 
-  <div class="field">
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :assunto %><br />
-    <%= f.text_field :assunto %>
-  </div>
-  <div class="field">
-    <%= f.label :data_contato %><br />
-    <%= f.datetime_select :data_contato %>
-  </div>
-  <div class="field">
-    <%= f.label :conteudo %><br />
-    <%= f.text_area :conteudo %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-       
-       
-       
-      </div>
-    </div>
-    <div id="column">
-      <div class="subnav">
-        <h2>Secondary Navigation</h2>
-        <ul>
-          <li><a href="#">Open Source Templates</a></li>
-          <li><a href="#">Free CSS Templates</a>
-            <ul>
-              <li><a href="#">Free XHTML Templates</a></li>
-              <li><a href="#">Free Website Templates</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Open Source Layouts</a>
-            <ul>
-              <li><a href="#">Open Source Software</a></li>
-              <li><a href="#">Open Source Webdesign</a>
-                <ul>
-                  <li><a href="#">Open Source Downloads</a></li>
-                  <li><a href="#">Open Source Website</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">Open Source Themes</a></li>
-        </ul>
-      </div>
-     
-      <div id="featured">
-        <ul>
-          <li>
-            <h2>Publicidade</h2>
-            <p class="imgholder"><img src="images/demo/240x90.gif" alt="" /></p>
-           
-          </li>
-        </ul>
-      </div>
-     
-    </div>
-    <!-- ####################################################################################################### -->
-  </div>
+		<div class="field">
+			<%= f.label :nome %>
+			<br />
+			<%= f.text_field :nome %>
+		</div>
+		<div class="field">
+			<%= f.label :email %>
+			<br />
+			<%= f.text_field :email %>
+		</div>
+		<div class="field">
+			<%= f.label :assunto %>
+			<br />
+			<%= f.text_field :assunto %>
+		</div>
+		<div class="field">
+			<%= f.label :data_contato %>
+			<br />
+			<%= f.datetime_select :data_contato %>
+		</div>
+		<div class="field">
 
-<!-- ####################################################################################################### -->
+			<%= f.label :conteudo %>
+			<br />
+			<%= f.text_area :conteudo %>
+		</div>
+		<div class="actions">
+			<%= f.submit %>
+		</div>
+		<% end %>
 
+	</section>
 
+</div>
+<!-- right column -->
+<aside id="right_column">
+	<h2>Menu de Navegação</h2>
+	<nav>
 
+		<!-- partial do submenu -->
 
+		<%= render :partial => "layouts/submenu" %>
+		<!-- fechar partial do submenu -->
 
+	</nav>
+	<!-- /nav -->
+	<section>
+		<h2>Outros Contatos</h2>
+		<address>
+			Av. Deputado Caetano Guedes
+			<br>
+			2366, Cacimba do Povo
+			<br>
+			
+			Aracati/CE
+			<br>
+			CEP: 62800-000
+			<br>
+			<br>
+			Tel: 88 3421 1471
+			<br>
+			Email: <a href="">contato@joceliogondim.com.br</a>
+		</address>
+	</section>
+	<!-- /section -->
+
+</aside>
+<!-- / content body -->
 
