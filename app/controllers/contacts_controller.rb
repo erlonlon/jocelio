@@ -1,6 +1,5 @@
 class ContactsController < ApplicationController
-  # GET /contacts
-  # GET /contacts.json
+ before_filter :authenticate_user!, :except => [:show, :index]
   def index
     #@contacts = Contact.all
       @contact = Contact.new

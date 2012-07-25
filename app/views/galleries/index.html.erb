@@ -1,10 +1,10 @@
 <!-- Introduction -->
 <section id="intro" class="clear">
 	 <% @galleries.each do |gallery| %>
-	<article class="one_fifth">
+	<article class="one_fifth lastbox">
 		
 		<a href="/galleries" title="veja galeria completa">
-			<%= image_tag gallery.foto.url(:thumb)  %>
+			<%= image_tag gallery.foto.url(:thumb) , :size => "166x130" %>
 			
 			</a>
 		<h2><%= gallery.nome %></h2>
@@ -22,5 +22,3 @@
 	
 </section>
 <!-- / Introduction -->
-
-
