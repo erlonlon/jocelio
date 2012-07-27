@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
 
   def index
-    #@contacts = Contact.all
+  
       @contact = Contact.new
 
     respond_to do |format|
@@ -24,6 +24,7 @@ class ContactsController < ApplicationController
   # GET /contacts/new
   # GET /contacts/new.json
   def new
+  
     @contact = Contact.new
 
     respond_to do |format|
@@ -34,12 +35,14 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1/edit
   def edit
+    
     @contact = Contact.find(params[:id])
   end
 
   # POST /contacts
   # POST /contacts.json
   def create
+   
     @contact = Contact.new(params[:contact])
 
     respond_to do |format|

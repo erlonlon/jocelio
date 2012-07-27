@@ -3,15 +3,12 @@
 	 <% @galleries.each do |gallery| %>
 	<article class="one_fifth lastbox">
 		
-		<a href="/galleries" title="veja galeria completa">
-			<%= image_tag gallery.foto.url(:thumb) , :size => "166x130" %>
+		   <%= image_tag gallery.foto.url(:thumb) , :size => "166x130" %>
 			
-			</a>
+
 		<h2><%= gallery.nome %></h2>
 		
-		<footer class="more">
-			<a href="galleries" title="página de fotos">Visite a galeria &raquo;</a>
-		</footer>
+	
 		
 	
 	</article>
