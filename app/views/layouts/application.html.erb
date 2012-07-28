@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-                <title>Jocelio</title>
+		<title>Jocelio</title>
 
-                <%= stylesheet_link_tag  "layout", :media => "all" %>
+		<%= stylesheet_link_tag  "layout", :media => "all" %>
 
-                <%= javascript_include_tag "jquery-1.4.1.min" %>
-                <%= javascript_include_tag "jquery-s3slider" %>
-                <%= javascript_include_tag "jquery-s3slider.setup" %>
+		<%= javascript_include_tag "jquery-1.4.1.min" %>
+		<%= javascript_include_tag "jquery-s3slider" %>
+		<%= javascript_include_tag "jquery-s3slider.setup" %>
+		
+		<!-- ligghtbox-->
+		
+		
 
 
+<!-- Add fancyBox main JS and CSS files -->
+             <%= javascript_include_tag "jquery-1.7.2.min" %>
+    <%= javascript_include_tag "jquery.fancybox" %>
+    <% stylesheet_link_tag "jquery.fancybox" %>
 
-  <!-- / fim dos arquivos utilizados pelo jQuery lightBox plugin -->
-                <%= csrf_meta_tags %>
+		<!-- ligghtbox-->
 
+		<%= csrf_meta_tags %>
 
-<title></title
-        </head>
+		<title></title
+	</head>
 
 	<div class="wrapper row1">
 		<header id="header" class="clear">
@@ -25,11 +33,13 @@
 
 			</hgroup>
 			<form action="#" method="post">
-				 <fieldset>
-        <legend>Search:</legend>
-        <input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
-        <input type="submit" id="sf_submit" value="submit">
-      </fieldset>
+				<fieldset>
+					<legend>
+						Search:
+					</legend>
+					<input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
+					<input type="submit" id="sf_submit" value="submit">
+				</fieldset>
 
 			</form>
 		</header>
@@ -44,7 +54,7 @@
 	<!-- content -->
 	<div class="wrapper row3">
 
-	<div id="container" class="clear">
+		<div id="container" class="clear">
 			<!-- Slider -->
 			<section id="featured_slide_">
 				<!-- ########################################################################################## -->
@@ -109,7 +119,7 @@
 		<!-- / partial footer-->
 		<%= render :partial => "layouts/footer" %>
 
-	<!-- /fecha partial footer-->
+		<!-- /fecha partial footer-->
 
 	</div>
 	<!-- Copyright -->

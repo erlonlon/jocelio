@@ -1,21 +1,17 @@
 <!-- Introduction -->
 <section id="intro" class="clear">
-	 <% @galleries.each do |gallery| %>
+	<% @galleries.each do |gallery| %>
 	<article class="one_fifth lastbox">
-		
-		   <%= image_tag gallery.foto.url(:thumb) , :size => "166x130" %>
-			
 
-		<h2><%= gallery.nome %></h2>
 		
-	
-		
-	
+    
+	<a href="<%= image_path gallery.foto.url(:original) %>">
+   <%= image_tag gallery.foto.url(:thumb) , :size => "166x130" %> 
+</a>
+
 	</article>
-		<% end %>
-	
-	
-	
-	
+	<% end %>
+
+
 </section>
 <!-- / Introduction -->
