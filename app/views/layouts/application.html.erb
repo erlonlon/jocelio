@@ -4,21 +4,22 @@
 		<title>Jocelio</title>
 
 		<%= stylesheet_link_tag  "layout", :media => "all" %>
-
-		<%= javascript_include_tag "jquery-1.4.1.min" %>
+		<%= stylesheet_link_tag  "lightbox", :media => "all" %>
+		<%= javascript_include_tag "jquery-1.7.2.min" %>
 		<%= javascript_include_tag "jquery-s3slider" %>
 		<%= javascript_include_tag "jquery-s3slider.setup" %>
-		
+
+		<!-- Add fancyBox main JS and CSS files -->
+
+		<%= javascript_include_tag "lightbox" %>
+
 		<!-- ligghtbox-->
-		
-		
 
+		<!-- Add fancyBox main JS and CSS files -->
 
-<!-- Add fancyBox main JS and CSS files -->
-            
-   
-    
+	
 
+	
 		<!-- ligghtbox-->
 
 		<%= csrf_meta_tags %>

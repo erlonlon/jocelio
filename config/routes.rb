@@ -2,7 +2,9 @@ Jocelio::Application.routes.draw do
 root :to => 'home#index'
   
   resources :galleries
-
+  
+  
+match 'gallery/:id' => 'galllery#show'
   resources :contacts
 
   resources :posts
