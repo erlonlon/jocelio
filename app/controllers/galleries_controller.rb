@@ -3,7 +3,7 @@ class GalleriesController < ApplicationController
 
   
   def index
-    @galleries = Gallery.all(:order => "created_at DESC", :limit => 15)
+    @galleries = Gallery.all(:order => "created_at DESC", :limit => 20)
 
     respond_to do |format|
       format.html # index.html.erb
