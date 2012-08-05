@@ -3,8 +3,8 @@ class GalleriesController < ApplicationController
 
   
   def index
-    @galleries = Gallery.all(:order => "created_at DESC", :limit => 20)
-
+    @galleries = Gallery.order("created_at DESC").paginate :page => params['page'], :per_page => 25
+    # @articles = Article.order("created_at  DESC").paginate :page=> params['page'], :per_page=>3
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @galleries }

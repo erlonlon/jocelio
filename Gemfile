@@ -17,3 +17,4 @@ gem 'jquery-rails'
 
 #gem "devise", "~> 2.1.2"
 gem 'paperclip'
+gem 'will_paginate'
