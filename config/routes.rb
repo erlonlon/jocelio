@@ -4,6 +4,7 @@ Jocelio::Application.routes.draw do
  
   
   resources :galleries
+  resources :propostas
   
   
 match 'gallery/:id' => 'galllery#show'
