@@ -1,150 +1,150 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Jocelio Gondim</title>
+<head>
+<title>Jocelio Gondim</title>
 
-		<%= stylesheet_link_tag  "layout", :media => "all" %>
-		<%= stylesheet_link_tag  "lightbox", :media => "all" %>
-		<%= javascript_include_tag "jquery-1.7.2.min" %>
-		<%= javascript_include_tag "jquery-s3slider" %>
-		<%= javascript_include_tag "jquery-s3slider.setup" %>
+<%= stylesheet_link_tag  "application", :media => "all" %>
 
-		<!-- Add fancyBox main JS and CSS files -->
-		<%= javascript_include_tag "lightbox" %>
-		<!-- ligghtbox-->
+<%= javascript_include_tag "application" %>
 
-		<!-- verificação do ggogle -->
-	<meta name="google-site-verification" content="7f4pZX7fENYbYNu04J93HPXRwAcTHu0_jtKEWVYZSLo" />
-	
-	<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-11357390-4']);
-  _gaq.push(['_trackPageview']);
+<!-- Add fancyBox main JS and CSS files -->
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+<!-- ligghtbox-->
+
+<!-- verificação do ggogle -->
+<meta name="google-site-verification" content="7f4pZX7fENYbYNu04J93HPXRwAcTHu0_jtKEWVYZSLo" />
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-11357390-4']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
 </script>
-	
-	<!-- verificação do ggogle -->
 
-		<%= csrf_meta_tags %>
+<!-- verificação do ggogle -->
 
-		
-	</head>
+<%= csrf_meta_tags %>
 
-	<div class="wrapper row1">
-		<header id="header" class="clear">
-			<hgroup>
-				<a href="/home"><img src="../images/demo/joc_banner4.jpg"  alt="banner" /></a>
 
-			</hgroup>
-			<form action="#" method="post">
-				<fieldset>
-					<legend>
-						Search:
-					</legend>
-					<input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
-					<input type="submit" id="sf_submit" value="submit">
-				</fieldset>
+</head>
 
-			</form>
-		</header>
-	</div>
-	<div class="wrapper row2">
-		<!-- chama render partial para navegação do site topo-->
+<body>
+<div class="wrapper row1">
+<header id="header" class="clear">
+<hgroup>
+	<a href="/home"><img src="../images/demo/joc_banner4.jpg"  alt="banner" /></a>
 
-		<%= render :partial => "layouts/menu"%>
+</hgroup>
+<form action="#" method="post">
+	<fieldset>
+		<legend>
+			Search:
+		</legend>
+		<input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
+		<input type="submit" id="sf_submit" value="submit">
+	</fieldset>
 
-		<!-- fecha navegação do site topo-->
-	</div>
-	<!-- content -->
-	<div class="wrapper row3">
+</form>
+</header>
+</div>
+<div class="wrapper row2">
+<!-- chama render partial para navegação do site topo-->
 
-		<div id="container" class="clear">
-			<!-- Slider -->
-			<section id="featured_slide_">
-				<!-- ########################################################################################## -->
-				<ul id="featured_slide_Content">
-					<li class="featured_slide_Image">
-						<figure>
-							<a href="#"><img src="../images/demo/joc_banner_5.jpg" width="940px" hegth="340px" alt="banner" /></a>
-							<figcaption>
-								<h2>Trabalhar para o Aracati crescer</h2>
+<%= render :partial => "layouts/menu"%>
 
-							</figcaption>
-						</figure>
-					</li>
-					<li class="featured_slide_Image">
-						<figure>
-							<a href="#"><img src="../images/demo/banner2.jpg" width="940px" hegth="340px" alt="" /></a>
-							<figcaption>
-								<h2>Junto com essa dupla o Aracati vai crescer</h2>
+<!-- fecha navegação do site topo-->
+</div>
+<!-- content -->
+<div class="wrapper row3">
 
-							</figcaption>
-						</figure>
-					</li>
-					<li class="featured_slide_Image">
-						<figure>
-							<a href="#"><img src="../images/demo/joc_banner_5.jpg"  width="940px" hegth="340px" alt="banner" /></a>
-							<figcaption>
-								<h2>Trabalhar para o Aracati crescer</h2>
+<div id="container" class="clear">
+<!-- Slider -->
+<section id="featured_slide_">
+	<!-- ########################################################################################## -->
+	<ul id="featured_slide_Content">
+		<li class="featured_slide_Image">
+			<figure>
+				<a href="#"><img src="../images/demo/joc_banner_5.jpg" width="940px" hegth="340px" alt="banner" /></a>
+				<figcaption>
+					<h2>Trabalhar para o Aracati crescer</h2>
 
-							</figcaption>
-						</figure>
-					</li>
-					<li class="featured_slide_Image">
-						<figure>
-							<a href="#"><img src="../images/demo/banner2.jpg" width="940px" hegth="340px" alt="" /></a>
-							<figcaption>
-								<h2>Junto com essa dupla o Aracati vai crescer</h2>
+				</figcaption>
+			</figure>
+		</li>
+		<li class="featured_slide_Image">
+			<figure>
+				<a href="#"><img src="../images/demo/banner2.jpg" width="940px" hegth="340px" alt="" /></a>
+				<figcaption>
+					<h2>Junto com essa dupla o Aracati vai crescer</h2>
 
-							</figcaption>
-						</figure>
-					</li>
-					<li class="clear featured_slide_Image">
-						<!-- Important - Leave This Empty -->
+				</figcaption>
+			</figure>
+		</li>
+		<li class="featured_slide_Image">
+			<figure>
+				<a href="#"><img src="../images/demo/joc_banner_5.jpg"  width="940px" hegth="340px" alt="banner" /></a>
+				<figcaption>
+					<h2>Trabalhar para o Aracati crescer</h2>
 
-					</li>
-				</ul>
-				<!-- ########################################################################################## -->
-			</section>
+				</figcaption>
+			</figure>
+		</li>
+		<li class="featured_slide_Image">
+			<figure>
+				<a href="#"><img src="../images/demo/banner2.jpg" width="940px" hegth="340px" alt="" /></a>
+				<figcaption>
+					<h2>Junto com essa dupla o Aracati vai crescer</h2>
 
-			<!-- main content -->
-			<div id="homepage">
-				<!-- conteudo dimanico -->
-				<%= yield %>
+				</figcaption>
+			</figure>
+		</li>
+		<li class="clear featured_slide_Image">
+			<!-- Important - Leave This Empty -->
 
-				<!-- conteudo dimanico -->
+		</li>
+	</ul>
+	<!-- ########################################################################################## -->
+</section>
 
-			</div>
-			<!-- / content body -->
-		</div>
-	</div>
-	<!-- Footer -->
-	<div class="wrapper row4">
-		<!-- / partial footer-->
-		<%= render :partial => "layouts/footer" %>
+<!-- main content -->
+<div id="homepage">
+	<!-- conteudo dimanico -->
+	<%= yield %>
 
-		<!-- /fecha partial footer-->
+	<!-- conteudo dimanico -->
 
-	</div>
-	<!-- Copyright -->
-	<div class="wrapper row5">
-		<footer id="copyright" class="clear">
-			<p class="fl_left">
-				Copyright &copy; 2012 - All Rights Reserved - <a href="/home">Domain Jocélio Gondim</a>
-			</p>
-			<p class="fl_right">
-				Template by <a href="http://www.os-templates.com/" target="blank" title="Free Website Templates">OS Templates</a>
-			</p>
+</div>
+<!-- / content body -->
+</div>
+</div>
+<!-- Footer -->
+<div class="wrapper row4">
+<!-- / partial footer-->
+<%= render :partial => "layouts/footer" %>
 
-		</footer>
-	</div>
-	</body>
+<!-- /fecha partial footer-->
+
+</div>
+<!-- Copyright -->
+<div class="wrapper row5">
+<footer id="copyright" class="clear">
+<p class="fl_left">
+	Copyright &copy; 2012 - All Rights Reserved - <a href="/home">Domain Jocélio Gondim</a>
+</p>
+<p class="fl_right">
+	Template by <a href="http://www.os-templates.com/" target="blank" title="Free Website Templates">OS Templates</a>
+</p>
+
+</footer>
+</div>
+</body>
 
 </html>

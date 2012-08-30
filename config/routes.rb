@@ -1,5 +1,11 @@
 Jocelio::Application.routes.draw do
   root :to => 'home#index'
+
+  namespace :admin do
+
+    resources :posts
+  
+  end
   
  
   
