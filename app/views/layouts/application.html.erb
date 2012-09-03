@@ -7,7 +7,6 @@
 
 <%= javascript_include_tag "application" %>
 
-
 <!-- Add fancyBox main JS and CSS files -->
 
 <!-- ligghtbox-->
@@ -30,6 +29,18 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </script>
 
 <!-- verificação do ggogle -->
+
+<!--facebook -->
+
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--facebook -->
 
 <%= csrf_meta_tags %>
 
@@ -68,7 +79,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <div id="container" class="clear">
 <!-- Slider -->
 <section id="featured_slide_">
-	<!-- ########################################################################################## -->
+	
 	<ul id="featured_slide_Content">
 		<li class="featured_slide_Image">
 			<figure>
@@ -111,7 +122,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 		</li>
 	</ul>
-	<!-- ########################################################################################## -->
+	
 </section>
 
 <!-- main content -->

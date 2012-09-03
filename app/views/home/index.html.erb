@@ -1,94 +1,100 @@
 <!-- Introduction -->
 <section id="intro" class="clear">
-	 <% @galleries_index.each do |gallery| %>
-	<article class="one_fifth lastbox">
-		
-		<a href="/galleries" title="veja galeria completa">
-			<%= image_tag gallery.foto.url(:thumb) , :size => "120x90" %>
-			
-			</a>
-		<h2>
-		      <a href="/galleries" title="Visite galeria de fotos"><%= gallery.nome %> &raquo;</a>
-		</h2>
-		
-		
-		
-	
-		
-	
-	</article>
-		<% end %>
-	<div align="center">
-	    <br />
-          <%= will_paginate @galleries_index %>
-    </div>
-	
-	
-	
+<% @galleries_index.each do |gallery| %>
+<article class="one_fifth lastbox">
+
+<a href="/galleries" title="veja galeria completa">
+<%= image_tag gallery.foto.url(:thumb) , :size => "120x90" %>
+
+</a>
+
+<a href="/galleries" title="Visite galeria de fotos"><%= gallery.nome %> &raquo;</a>
+
+
+</article>
+<% end %>
+<div align="center">
+<br />
+<%= will_paginate @galleries_index %>
+</div>
+
 </section>
 <!-- / Introduction -->
 <!-- ########################################################################################## -->
 <!-- Services -->
 <section id="services" class="last clear">
-	<article class="one_third">
-		<figure class="clear"><img src="../images/delegacia.jpg" width="48" height="48" alt="">
-			<figcaption>
-				<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
-				<p>
-					Criação da secretaria municipal de segurança pública.
-				</p>
-			</figcaption>
-		</figure>
-	</article>
-	<article class="one_third">
-		<figure class="clear"><img src="images/mercado.jpg" width="48" height="48" alt="">
-			<figcaption>
-			<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
-				<p>
-					A construção do centro de abastecimento de Aracati.
-				</p>
-			</figcaption>
-		</figure>
-	</article>
-	<article class="one_third lastbox">
-		<figure class="clear"><img src="images/detran.jpg" width="48" height="48" alt="">
-			<figcaption>
-			<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
-				<p>
-				A vinda da regional do Detran-Ce para o Aracati.
-				</p>
-			</figcaption>
-		</figure>
-	</article>
-	<article class="one_third">
-		<figure class="clear"><img src="images/drogas.jpg" width="48" height="48" alt="">
-			<figcaption>
-			<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
-				<p>
-					A construção de um centro de tratamento para dependentes químicos em tempo integral.
-				</p>
-			</figcaption>
-		</figure>
-	</article>
-	<article class="one_third">
-		<figure class="clear"><img src="images/resgate.jpg" width="48" height="48" alt="">
-			<figcaption>
-			<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
-				<p>
-				O fortalecimento do grupamento de resgate da Guarda municipal de Aracati.
-				</p>
-			</figcaption>
-		</figure>
-	</article>
-	<article class="one_third lastbox">
-		<figure class="clear"><img src="images/transito.gif" width="48" height="48" alt="">
-			<figcaption>
-			<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
-				<p>
-				 Organizar o trânsito de forma planejada, feito pela engenharia de trânsito.
-				</p>
-			</figcaption>
-		</figure>
-	</article>
+<article class="one_third">
+<figure class="clear"><img src="../images/delegacia.jpg" width="48" height="48" alt="">
+<figcaption>
+<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
+<p>
+	Criação da secretaria municipal de segurança pública.
+</p>
+</figcaption>
+</figure>
+</article>
+<article class="one_third">
+<figure class="clear"><img src="images/mercado.jpg" width="48" height="48" alt="">
+<figcaption>
+<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
+<p>
+	A construção do centro de abastecimento de Aracati.
+</p>
+</figcaption>
+</figure>
+</article>
+<article class="one_third lastbox">
+<figure class="clear"><img src="images/detran.jpg" width="48" height="48" alt="">
+<figcaption>
+<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
+<p>
+A vinda da regional do Detran-Ce para o Aracati.
+</p>
+</figcaption>
+</figure>
+</article>
+<article class="one_third">
+<figure class="clear"><img src="images/drogas.jpg" width="48" height="48" alt="">
+<figcaption>
+<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
+<p>
+	A construção de um centro de tratamento para dependentes químicos em tempo integral.
+</p>
+</figcaption>
+</figure>
+</article>
+<article class="one_third">
+<figure class="clear"><img src="images/resgate.jpg" width="48" height="48" alt="">
+<figcaption>
+<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
+<p>
+O fortalecimento do grupamento de resgate da Guarda municipal de Aracati.
+</p>
+</figcaption>
+</figure>
+</article>
+<article class="one_third lastbox">
+<figure class="clear"><img src="images/transito.gif" width="48" height="48" alt="">
+<figcaption>
+<h2><a href="/propostas" title="Leia mais">Proposta do Candidato</a></h2>
+<p>
+ Organizar o trânsito de forma planejada, feito pela engenharia de trânsito.
+</p>
+</figcaption>
+</figure>
+</article>
 </section>
 <!-- / Services -->
+
+<!-- facebook -->
+<section id="intro" class="clear">
+	<h2>Curta Nossa FanPage no Facebook</h2>
+<article class="four_fifth lastbox">
+
+<div class="fb-like" data-send="true" data-width="700" data-show-faces="true"></div>
+<div id="fb-root"></div>
+
+</article>
+</section>
+<!-- / Introduction -->
+
