@@ -2,12 +2,12 @@
 class Gallery < ActiveRecord::Base
   attr_accessible :nome, :foto
   
-  has_attached_file :foto, :styles => {:medium => "300x300" , :thumb => "166x130", }
-  
+  has_attached_file :foto, :styles => {:medium => "300x300#" , :thumb => "166x166#" }
 
- validates_attachment_content_type :foto, :content_type => ["image/jpg", "image/jpeg"]
-# diz o tipo de extensão que o sistema aceita para validar o upload.
+   validates_presence_of :nome
+   validates_attachment_presence :foto
+   validates_attachment_size :foto, :less_than => 1.megabyte
+   validates_attachment_content_type :foto, :content_type => %w(image/png image/jpeg image/gif)
 
- validates_attachment_size :foto, :less_than => 1.megabyte
-
+   default_scope order ("created_at DESC")
 end

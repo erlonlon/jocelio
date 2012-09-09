@@ -3,74 +3,44 @@
 <head>
 <title>Jocelio Gondim</title>
 
-<%= stylesheet_link_tag  "application", :media => "all" %>
+<%= stylesheet_link_tag  "admin/admin", :media => "all" %>
 
-<%= javascript_include_tag "application" %>
-
-
-<!-- verificação do ggogle -->
-<meta name="google-site-verification" content="7f4pZX7fENYbYNu04J93HPXRwAcTHu0_jtKEWVYZSLo" />
-
-<script type="text/javascript">
-
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-11357390-4']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-</script>
-
-<!-- verificação do ggogle -->
+<%= javascript_include_tag "admin/admin" %>
 
 <%= csrf_meta_tags %>
+
 
 
 </head>
 
 <body>
 
-<div class="wrapper row1">
-  <header id="header" class="clear">
-    <hgroup>
-      <h1><a href="index.html">Painel Administrativo do Site</a></h1>
-      <h2>www.joceliogondim.com.br</h2>
-    </hgroup>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Search:</legend>
-        <input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
-        <input type="submit" id="sf_submit" value="submit">
-      </fieldset>
-    </form>
-  </header>
+<!-- Header -->
+<div id="header">
+<%= render :partial => "admin/pages/menu" %>
 </div>
-<div class="wrapper row2">
- 
- <%= render :partial => "menu" %>
-</div>
- <!-- ########################################################################################## -->
-<!-- content -->
-<div class="wrapper row3">
+<!-- End Header -->
 
-    <%= yield %>
+<!-- Container -->
+<div id="container">
+	<div class="shell">
+		
+	<%= flash_messages %>
+<%= yield %>
 </div>
- <!-- ########################################################################################## -->
+</div>
+<!-- End Container -->
+
 <!-- Footer -->
-<div class="wrapper row4">
- 
+<div id="footer">
+<div class="shell">
+<span class="left">&copy; 2012 - Jocélio Gondim</span>
+<span class="right">
+Design by <a href="http://www.eboxbrasil.com.br" target="_blank" title="The Sweetest CSS Templates WorldWide">eboxbrasil.com.br</a>
+</span>
 </div>
-<!-- Copyright -->
-<div class="wrapper row5">
-  <footer id="copyright" class="clear">
-    <p class="fl_left">Copyright &copy; 2012 - All Rights Reserved - <a href="#">Jocélio Gondim</a></p>
-    <p class="fl_right">Web Master &copy;<a href="http://www.eboxbrasil.com.br/" title="Eboxbrasil" target="blank">Eboxbrasil</a></p>
-  </footer>
 </div>
+<!-- End Footer -->
 
 
 </body>

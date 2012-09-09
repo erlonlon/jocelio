@@ -1,30 +1,29 @@
 Jocelio::Application.routes.draw do
+
+  scope '/admin' do
+    devise_for :users,
+               :controllers => {:sessions => "admin/sessions",
+                                :passwords => "admin/passwords"}
+
+  end
+
   root :to => 'home#index'
 
   namespace :admin do
-
+    root :to => "pages#index"
     resources :posts
+    resources :galleries
+    resources :users, :except => [:show] # só não cria a rota show
   
-  end
+  end 
   
- 
-  
-  resources :galleries
-  resources :propostas
-  resources :agendas
-  
-  
-match 'gallery/:id' => 'galllery#show'
+  resources :galleries, :only => [:index]
+  resources :propostas, :only => [:index]
+  resources :agendas, :only => [:index]  
+
   resources :contacts
+  resources :posts 
+  resources :home 
+ 
 
-  resources :posts
-
- 
-  resources :home
-  resources :events
- 
-  
- 
- match ':controller(/:action(/:id))(.:format)'
-  #match 'products/:id' => 'catalog#view'
 end
