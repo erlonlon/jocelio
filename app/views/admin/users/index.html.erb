@@ -28,30 +28,33 @@
 <th>Email</th>		
 <th width="110" class="ac">Content Control</th>
 </tr>
-<% @users.each do |u| %>
+<% @users.each do |user| %>
 
 <tr class="odd">
 
-<td><h3><%= link_to admin_user_path(u) do %>
-<%= u.name %>
+<td><h3><%= link_to admin_user_path(user) do %>
+<%= user.name %>
 <% end %>
 </h3></td>
 <td>
-<%= u.email %></td>
+<%= user.email %></td>
 
 <td>
 
 
 
-<%= link_to  admin_user_path(u), :class => "ico del", confirm: 'Deletar arquivo, Tem certeza ?', method: :delete , :title => "Excluir arquivo" do %>
+<%= link_to  admin_user_path(user), :class => "ico del", confirm: 'Deletar arquivo, Tem certeza ?', method: :delete , :title => "Excluir arquivo" do %>
 Delete
 <% end %>
-<%= link_to edit_admin_user_path(u), :class => "ico edit" do %>
+ 
+<%= link_to edit_admin_user_path(user), :class => "ico edit" do %>
 
 Editar
 
 
 <% end %>
+
+
 </td>
 </tr>
 <% end %>

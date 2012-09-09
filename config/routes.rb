@@ -14,6 +14,7 @@ Jocelio::Application.routes.draw do
     resources :posts
     resources :galleries
     resources :users, :except => [:show] # só não cria a rota show
+    resources :contacts
   
   end 
   

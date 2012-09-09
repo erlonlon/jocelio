@@ -2,7 +2,7 @@ class ContactsController < ApplicationController
  before_filter :load_resources
   def index  
       @contact = Contact.new
-    respond_with @contacts
+      respond_with @contacts
   end
 
  
@@ -17,16 +17,9 @@ class ContactsController < ApplicationController
   def create
    
     @contact = Contact.new(params[:contact])
-
-    respond_to do |format|
-      if @contact.save
-        format.html { redirect_to @contact, notice: 'Contato salvo com sucesso, aguarde nosso retorno.' }
-        format.json { render json: @contact, status: :created, location: @contact }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
-      end
-    end
+    flash[:notice] = "Contato enviado com sucesso." if @contact.save
+    respond_with @contact, :location => contact_path(@contact)
+    
   end
 
   def load_resources

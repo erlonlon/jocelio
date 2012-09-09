@@ -1,0 +1,77 @@
+<!-- Main -->
+<div id="main">
+<div class="cl">&nbsp;</div>
+
+<!-- Content -->
+<div id="content">
+
+<!-- Box -->
+<div class="box">
+<!-- Box Head -->
+<div class="box-head">
+<h2 class="left">Lista de Email</h2>
+<div class="right">
+<label>search articles</label>
+<input type="text" class="field small-field" />
+<input type="submit" class="button" value="search" />
+</div>
+</div>
+<!-- End Box Head -->	
+
+<!-- Table -->
+<div class="table">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<th>Data</th>
+<th>Nome</th>
+<th>Email</th>		
+<th width="110" class="ac">Content Control</th>
+</tr>
+<% @contacts.each do |c| %>
+
+<tr class="odd">
+<td><%= c.data_contato.strftime("%d %b de %Y") %></td>
+<td><h3><%= link_to admin_contact_path(c) do %>
+<%= c.nome %>
+<% end %>
+</h3></td>
+<td>
+<%= c.email %></td>
+
+<td>
+ 
+<%= link_to admin_contact_path(c), :class => "ico edit" do %>
+Show
+<% end %>
+
+</td>
+</tr>
+<% end %>
+
+</table>
+
+<!-- Pagging -->
+<div class="pagging">
+	
+	
+		
+		 <%= will_paginate @galleries %>
+	
+</div>
+<!-- End Pagging -->
+
+</div>
+<!-- Table -->
+
+</div>
+<!-- End Box -->
+
+</div>
+<!-- End Content -->
+
+
+
+<div class="cl">&nbsp;</div>			
+</div>
+<!-- Main -->

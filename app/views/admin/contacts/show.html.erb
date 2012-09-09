@@ -9,18 +9,29 @@
 <div class="box">
 <!-- Box Head -->
 <div class="box-head">
-<h2 class="left">Visualização de Imagem</h2>
+<h2 class="left">Visualização de Email</h2>
 
 </div>
 <!-- End Box Head -->	
 
 <!-- Table -->
 <div class="form">   
-<span>Título da Imagem:</span>
-  <label> <%= @gallery.nome %> </label>
+<span>Nome:</span>
+  <label> <%= @contact.nome %> </label>
 
-  <%= image_tag @gallery.foto.url, :size => "725x500" %> <br>
-  <%= link_to admin_galleries_path do %>
+  <span>Email:</span>
+<label><%= @contact.email %></label>
+
+
+  <span>Assunto:</span>
+<label><%= @contact.assunto %></label>
+
+
+
+  <span>Conteudo:</span>
+<label><%= @contact.conteudo %></label>
+
+  <%= link_to admin_contacts_path do %>
   Voltar
   <% end %>
  
