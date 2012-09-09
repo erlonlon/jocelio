@@ -22,7 +22,7 @@ Jocelio::Application.configure do
 
  
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-   config.assets.precompile += %w(layout.css navi.css forms.css tables.css slider.css homepage.css lightbox.css style.css jquery-1.7.2.min.js lightbox.js jquery-1.4.1.min.js jquery-s3slider.js jquery-s3slider.setup.js )
+   config.assets.precompile += %w(layout.css navi.css forms.css tables.css slider.css homepage.css lightbox.css admin/lightbox.css admin/admin.css admin/style.css admin/admin.js jquery-1.7.2.min.js lightbox.js jquery-s3slider.js jquery-s3slider.setup.js )
 
  
   config.i18n.fallbacks = true
