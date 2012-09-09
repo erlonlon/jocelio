@@ -1,0 +1,107 @@
+<!-- Main -->
+<div id="main">
+<div class="cl">&nbsp;</div>
+
+<!-- Content -->
+<div id="content">
+
+<!-- Box -->
+<div class="box">
+<!-- Box Head -->
+<div class="box-head">
+<h2 class="left">Lista de Usuários</h2>
+<div class="right">
+<label>search articles</label>
+<input type="text" class="field small-field" />
+<input type="submit" class="button" value="search" />
+</div>
+</div>
+<!-- End Box Head -->	
+
+<!-- Table -->
+<div class="table">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+
+<th>Nome</th>
+<th>Email</th>		
+<th width="110" class="ac">Content Control</th>
+</tr>
+<% @users.each do |u| %>
+
+<tr class="odd">
+
+<td><h3><%= link_to admin_user_path(u) do %>
+<%= u.name %>
+<% end %>
+</h3></td>
+<td>
+<%= u.email %></td>
+
+<td>
+
+
+
+<%= link_to  admin_user_path(u), :class => "ico del", confirm: 'Deletar arquivo, Tem certeza ?', method: :delete , :title => "Excluir arquivo" do %>
+Delete
+<% end %>
+<%= link_to edit_admin_user_path(u), :class => "ico edit" do %>
+
+Editar
+
+
+<% end %>
+</td>
+</tr>
+<% end %>
+
+</table>
+
+<!-- Pagging -->
+<div class="pagging">
+<div class="left">Showing 1-12 of 44</div>
+<div class="right">
+
+
+</div>
+</div>
+<!-- End Pagging -->
+
+</div>
+<!-- Table -->
+
+</div>
+<!-- End Box -->
+
+</div>
+<!-- End Content -->
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Box -->
+<div class="box">
+
+<!-- Box Head -->
+<div class="box-head">
+<h2>Management</h2>
+</div>
+<!-- End Box Head-->
+
+<div class="box-content">
+<%= link_to new_admin_user_path, :class =>"add-button" do %>
+<span>Novo Registro</span>
+<% end %>
+
+<div class="cl">&nbsp;</div>
+
+</div>
+</div>
+<!-- End Box -->
+</div>
+<!-- End Sidebar -->
+
+<div class="cl">&nbsp;</div>			
+</div>
+<!-- Main -->

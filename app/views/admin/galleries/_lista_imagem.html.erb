@@ -1,0 +1,28 @@
+
+
+<!-- Box -->
+<div class="box">
+
+<!-- Box Head -->
+<div class="box-head">
+<h2>Lista de Imagens</h2>
+</div>
+<!-- End Box Head-->
+
+<div class="box-content">
+
+<% @galleries_lista.each do |g| %>
+ 
+<a href="<%= image_path g.foto.url %>" rel="lightbox[roadtrip]" title="<%= g.nome%> "> 
+		    <%= image_tag g.foto.url(:thumb), :size => "65x50"  %></a>
+
+   
+<% end %>
+
+ 
+
+<div class="cl">&nbsp;</div>
+
+</div>
+</div>
+<!-- End Box -->

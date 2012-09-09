@@ -1,0 +1,29 @@
+<% if resource.errors.any? %>
+
+<div class="msg msg-error">
+<p><strong>
+<%= pluralize(resource.errors.count, "error") %> Não foi possível criar o registro no banco:
+</strong></p>
+<ul>
+<% resource.errors.full_messages.each do |msg| %>
+<li>
+     
+<div class="msg msg-ok">
+			<p><strong><%= msg %></strong></p>
+		
+		</div>
+
+        
+       
+
+</li>  	
+<% end %>
+</ul>
+</div>
+<% end %>
+
+
+
+	
+
+

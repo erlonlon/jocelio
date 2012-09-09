@@ -1,0 +1,88 @@
+
+
+<!-- Main -->
+<div id="main">
+<div class="cl">&nbsp;</div>
+
+<!-- Content -->
+<div id="content">
+
+<!-- Box -->
+<div class="box">
+<!-- Box Head -->
+<div class="box-head">
+<h2>Cadastro de Novo Regisstro</h2>
+</div>
+<!-- End Box Head -->
+
+
+<!-- Form -->
+<div class="form">   
+
+  <%= form_for [:admin ,@gallery] do |f| %>
+
+   <%= error_messages_for @gallery %>             
+   
+    <p>      
+      <span class="req">max 100 symbols</span>
+      <label>Article Title <span>(Required Field)</span></label>
+       <%= f.text_field :nome ,:class =>"field size1" %>
+
+    </p>      
+    <p>    
+      <label>Selecione a Imagem <span>(Required Field)</span></label>
+       <%= f.file_field :foto %>
+    
+         <%= image_tag @gallery.foto.url(:thumb), :size => "200x150" %>
+       
+    </p>  
+ 
+</div>
+<!-- End Form -->
+
+<!-- Form Buttons -->
+<div class="buttons">
+  <%= f.submit %>
+ 
+  <%= link_to 'Cancelar', admin_galleries_path , :class => "button"%>
+</div>
+ <% end %>
+<!-- End Form Buttons -->
+
+</div>
+<!-- End Box -->
+
+</div>
+<!-- End Content -->
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Box -->
+<div class="box">
+
+<!-- Box Head -->
+<div class="box-head">
+<h2>Menu Opções</h2>
+</div>
+<!-- End Box Head-->
+
+<div class="box-content">
+<%= link_to new_admin_gallery_path, :class =>"add-button" do %>
+  <span>Novo Registro</span>
+<% end %>
+
+
+<div class="cl">&nbsp;</div>
+
+</div>
+</div>
+<!-- End Box -->
+
+<%= render :partial => "admin/galleries/lista_imagem" %>
+</div>
+<!-- End Sidebar -->
+
+<div class="cl">&nbsp;</div>      
+</div>
+<!-- Main -->

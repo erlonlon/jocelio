@@ -1,0 +1,74 @@
+
+
+
+ 
+
+
+
+
+
+<!-- Main -->
+<div id="main">
+<div class="cl">&nbsp;</div>
+
+<!-- Content -->
+<div id="content">
+
+<!-- Box -->
+<div class="box">
+<!-- Box Head -->
+<div class="box-head">
+<h2 class="left">Visualização de Imagem</h2>
+
+</div>
+<!-- End Box Head -->	
+
+<!-- Table -->
+<div class="form">   
+<span>Título da Imagem:</span>
+  <label> <%= @gallery.nome %> </label>
+
+  <%= image_tag @gallery.foto.url, :size => "725x500" %> <br>
+  <%= link_to admin_galleries_path do %>
+  Voltar
+  <% end %>
+ 
+
+
+</div>
+<!-- Table -->
+
+</div>
+<!-- End Box -->
+
+</div>
+<!-- End Content -->
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Box -->
+<div class="box">
+
+<!-- Box Head -->
+<div class="box-head">
+<h2>Management</h2>
+</div>
+<!-- End Box Head-->
+
+<div class="box-content">
+<%= link_to new_admin_gallery_path, :class =>"add-button" do %>
+	<span>Nova Imagem</span>
+<% end %>
+
+<div class="cl">&nbsp;</div>
+
+</div>
+</div>
+<!-- End Box -->
+</div>
+<!-- End Sidebar -->
+
+<div class="cl">&nbsp;</div>			
+</div>
+<!-- Main -->

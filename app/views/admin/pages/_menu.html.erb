@@ -1,0 +1,50 @@
+<div class="shell">
+<!-- Logo + Top Nav -->
+<div id="top">
+<h1><a href="#">Painel de Controle do Site</a></h1>
+<div id="top-navigation">
+Seja Bem Vindo <a href="#"><strong>Administrator</strong></a>
+<span>|</span>
+
+<%= link_to destroy_user_session_path, :method => "delete" do %>
+   <strong>Sair do Sistema</strong>
+<% end %>
+</div>
+</div>
+<!-- End Logo + Top Nav -->
+
+<!-- Main Nav -->
+<% if user_signed_in? %>
+<div id="navigation">
+<ul>
+<li>
+<%= link_to admin_root_path, :class => "active" do %>
+<span> Home</span>
+<% end %>
+	</li>
+<li>
+<%= link_to admin_root_path do %>
+<span> Categorias</span>
+<% end %>
+	</li>
+<li>
+<%= link_to admin_root_path do %>
+<span>Artigos</span>
+<% end %>
+	</li>
+<li>
+<%= link_to admin_galleries_path do %>
+<span>Imagens</span>
+<% end %>
+	</li>
+<li>
+<%= link_to admin_users_path do %>
+<span>Usuários</span>
+<% end %>
+	</li>
+
+</ul>
+</div>
+<% end %>
+<!-- End Main Nav -->
+</div>
